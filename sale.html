@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+
+	<style type="text/css">
+        * {
+            font-family: 'Stylish', sans-serif;
+        }
+
+        .img {
+            width: 600px;
+            height: 430px;
+            margin: auto;
+
+            background-image: url('https://image.auction.co.kr/itemimage/13/2c/77/132c77ce96.jpg');
+            background-position: center;
+        }
+
+        .wrap {
+            width: 500px;
+            margin: auto;
+        }
+
+        .main {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            text-align: center;
+        }
+
+	</style>
+	<script>
+        function complete() {
+            alert('주문이 완료되었습니다.');
+        }
+	</script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+			crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+			crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+			crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Stylish&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="img"></div>
+<div class="wrap">
+	<div class="main">
+		<span style="font-size: 30px">초코빵 팝니다</span>
+		<span style="font-size: 15px">가격: 1,000,000원/박스</span>
+		<p>이 상품으로 말할 것 같으면 용왕이 찾지 못한 토끼의 간을 찾아 빨간망토의 늑대와 아기 돼지 삼형제의 숨결이 고루 녹아 있는 먹으면 120세까지 살 수 있다는 이 상품으로 말할 것 같으면 용왕이
+			찾지 못한 토끼의 간을 찾아 빨간망토의 늑대와 아기 돼지..</p>
+	</div>
+
+	<div class="input-group mb-3">
+		<div class="input-group-prepend">
+			<span class="input-group-text" id="basic-addon3">주문자 성함</span>
+		</div>
+		<input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+	</div>
+	<div class="input-group mb-3">
+		<div class="input-group-prepend">
+			<label class="input-group-text" for="inputGroupSelect01">수량</label>
+		</div>
+		<select class="custom-select" id="inputGroupSelect01">
+			<option selected>-- 수량을 선택하세요 --</option>
+			<option value="1">1 box</option>
+			<option value="2">2 box</option>
+			<option value="3">4 box</option>
+			<option value="3">5 box</option>
+			<option value="3">6 box</option>
+			<option value="3">7 box</option>
+			<option value="3">8 box</option>
+			<option value="3">9 box</option>
+			<option value="3">10 box</option>
+		</select>
+	</div>
+	<div class="input-group mb-3">
+		<div class="input-group-prepend">
+			<span class="input-group-text" id="basic-addon3">주소</span>
+		</div>
+		<input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+	</div>
+	<div class="input-group mb-3">
+		<div class="input-group-prepend">
+			<span class="input-group-text" id="basic-addon3">전화번호</span>
+		</div>
+		<input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+	</div>
+	<div class="button">
+		<button onclick="complete()" type="button" class="btn btn-primary">
+			주문하기
+		</button>
+	</div>
+
+</div>
+
+
+</body>
+</html>
